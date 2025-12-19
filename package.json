@@ -1,0 +1,17 @@
+{
+  "name": "songlang-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run build:core && npm run dev:web",
+    "dev:web": "npm run dev --workspace=@songlang/web",
+    "build": "npm run build:core && npm run build:web",
+    "build:core": "npm run build --workspace=@songlang/core",
+    "build:web": "npm run build --workspace=@songlang/web",
+    "preview": "npm run preview --workspace=@songlang/web"
+  }
+}
