@@ -15,6 +15,9 @@ const config = {
     paths: {
       base: dev ? '' : '/SongLangTS',
     },
+    prerender: {
+      handleHttpError: 'warn',
+    },
   },
 };
 
